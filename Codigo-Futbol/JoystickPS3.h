@@ -17,7 +17,7 @@ class JoystickPS3 : public InterfazJoystick {
   }
 
   int getY() override {
-    return Ps3.data.analog.stick.ly;
+    return -Ps3.data.analog.stick.ly;
   }
 
   int getRotation() override {
